@@ -15,11 +15,10 @@
 
 ## Provisioning GPU CPU and Memory:
 1. If you request 10 core CPU, it will try to look for a 10 core CPU VM.
-	a. In the scenario that you only had a node pool with 4-core CPUs. You would need to go into your portal -> node pools and create a new node pool with the specific cored CPUs.
+	1. In the scenario that you only had a node pool with 4-core CPUs. You would need to go into your portal -> node pools and create a new node pool with the specific cored CPUs.
 2. Provisioning GPU:
-	a. Need to enable GPU in node pools first for it to work.
-		i. In preview.
-		https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#update-your-cluster-to-use-the-aks-gpu-image-preview
+	1. Need to enable GPU in node pools first for it to work.
+		1. In preview. [Link to preview documentation](https://docs.microsoft.com/en-us/azure/aks/gpu-cluster#update-your-cluster-to-use-the-aks-gpu-image-preview)
 
 ## Other Notes:
 1. CPU + Memory specs for Jupyter notebook refer to the request for a single pod in the cluster. Make sure you have a single node which can handle the full requirements
